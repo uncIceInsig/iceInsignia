@@ -125,6 +125,7 @@ table{
   margin-left: 15%;
   text-align: left;
   cursor:default;
+  color: #e50000;
 }
 .playerTwoList
 {
@@ -134,6 +135,7 @@ table{
   text-align: right;
   emtpy-cells: show;
   cursor:default;
+  color: DodgerBlue;
 
 }
 .shop
@@ -174,12 +176,15 @@ CSS
   float: left;
   width: auto;
   padding: 15px;
+  color: #e50000;
+
 }
 
 .Player2TeamList{
   float: left;
   width: auto;
   padding: 15px;
+  color: DodgerBlue;
 }
 
 #gameTable{
@@ -198,13 +203,13 @@ CSS
 }
 #gameTable td.playerOne
 {
-  /*border-color: #e50000;*/
+
   filter:drop-shadow(1px 1px 10px #e50000);
 
 }
 #gameTable td.playerTwo
 {
-  /*border-color: DodgerBlue;*/
+
   filter:drop-shadow(1px 1px 10px dodgerblue);
 }
 
@@ -230,10 +235,9 @@ CSS
 
 #charInfo {
   font: 15px;
-  margin-left: 5px;
+  margin: 0;
+  padding: 0;
   border-radius: 3px;
-  margin-right: 2px;
-  float: left;
   background-color: #666666;
 }
 
@@ -242,16 +246,13 @@ CSS
   height: 40px;
   text-align: left;
   overflow: hidden;
-  font-size: 15px;
-  padding-bottom: 14px;
-
 }
 
 #spellInfo{
   table-layout: fixed;
-  border-radius: 3px;
-  background-color: #666666;
 }
+
+
 /*
 #gameTable td:hover{
     border: 1px solid;

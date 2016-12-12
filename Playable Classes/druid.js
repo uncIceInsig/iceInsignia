@@ -133,6 +133,10 @@ var Druid = function(player, count)
     {
       return "The One Ring - Increase your Strength by 30";
     }
+    else if(this.item == "boot")
+    {
+      return "Nikes - Increase max movement by 1";
+    }
     else {
       return "No item";
     }

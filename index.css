@@ -104,7 +104,6 @@ div.slot{
 /*
 div.slot:hover{
   border: 1px solid DeepSkyBlue;
-
 }
 div.char:hover{
   border: 1px solid DeepSkyBlue;
@@ -175,9 +174,20 @@ CSS
 .Player1TeamList{
   float: left;
   width: auto;
-  padding-left: 39%;
-  padding-top: 5%;
+  padding-left: 27%;
+  padding-top: 10%;
   color: #e50000;
+}
+
+.Player1TeamList td{
+  padding-bottom: 15px;
+  padding-left: 15px;
+
+}
+.Player2TeamList td{
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 caption{
   padding-left: 65%;
@@ -185,10 +195,10 @@ caption{
 
 .Player2TeamList{
 
-  float: left;
+float: left;
   width: auto;
   padding-left: 15px;
-  padding-top: 5%;
+  padding-top: 10%;
   color: dodgerblue;
 }
 .Player2TeamLeft td{
@@ -274,9 +284,37 @@ caption{
 {
   color: dodgerblue;
 }
-/*
-#gameTable td:hover{
-    border: 1px solid;
-    border-color: red;
+
+#submitButton{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: DeepSkyBlue;
+  border-radius: 6px;
+  margin: 10px;
+  left: 15%;
 }
-*/
+
+#submitButton:hover{
+  background-color: DodgerBlue;
+}
+
+.p2hov{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: lightcoral;
+  border-radius: 6px;
+  margin: 10px;
+  left: 15%;
+}
+
+.p2hov:hover{
+  background-color:#e50000;
+}
+
+#ice{
+  font-family: fantasy;
+  text-shadow: 0 0 2px bisque;
+  color: mediumslateblue;
+}

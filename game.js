@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-
+  $('.p2hov').on('click', function(e){
+    e.preventDefault();
+    window.location.href = 'destroy.php';
+  });
 
   var settings = {
     height: 15,
@@ -233,9 +236,11 @@ var Game = function()
         }
         if(playerOne.hasMoves()){
           $('.turn').empty();
-          $('.turn').attr('id', playerOneTurn);
+          $('.turn').attr('id', 'playerOneTurn');
           $('.turn').innerHTML = "PLAYER ONE'S TEAM";
         }else{
+          $('.turn').empty();
+          $('.turn').attr('id', 'playerTwoTurn');
           $('turn').innerHTML = "PLAYER TWO'S TEAM";
         }
 
@@ -962,7 +967,7 @@ var Game = function()
           if ((k>=3 && k<=4 && i>=10 &&i<=11)) {
             board[i][k].terrain = 'water';
           }
-          if ((k==11&&i==2)||(k==4&&i==6)||(k==7&&i==10)||(k==13&&i==8)||(k==1&&i==8)||(k==8&&i==4)||(k==2&&i==0)||(k==10&&i==7)||(k==2&&i==3)) {
+          if ((k==11&&i==2)||(k==4&&i==6)||(k==7&&i==10)||(k==13&&i==8)||(k==1&&i==8)||(k==8&&i==4)||(k==10&&i==7)||(k==2&&i==3)) {
             board[i][k].terrain = 'weed';
           }
         }

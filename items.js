@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
-alert($('#user1').text())
+  $('.p2hov').on('click', function(e){
+    e.preventDefault();
+    window.location.href = 'destroy.php';
+  });
   //alert(window.location.href);
   parseURL();
 
@@ -64,7 +67,7 @@ var parseURL = function(){
     switch (p1chars.charAt(i-1)) {
       case 'f':
         elm = document.createElement('img');
-        elm.src = 'sprites/fighter.gif'
+        elm.src = 'sprites/tank.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
@@ -123,7 +126,7 @@ var parseURL = function(){
     switch (p2chars.charAt(i-1)) {
       case 'f':
         elm = document.createElement('img');
-        elm.src = 'sprites/fighter.gif'
+        elm.src = 'sprites/tank.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
@@ -202,6 +205,8 @@ var splitItems = function(oneItems, twoItems){
         packed1 += 'e';
         break;
       case 'boot1':
+        packed1 += 't';
+        break;
       default:
         packed1 += 'x';
         break;
@@ -222,6 +227,8 @@ var splitItems = function(oneItems, twoItems){
         packed2 += 'e';
         break;
       case 'boot2':
+        packed2 += 't';
+        break;
       default:
         packed2 += 'x';
         break;
@@ -238,6 +245,6 @@ var splitItems = function(oneItems, twoItems){
   u2 ='&u2=' + $('#user2').text().trim();
 
   data = u1+u2+'&p1='+p1chars+'&p2='+p2chars+packed1+packed2;
-  alert(data)
+
   location.href = window.location.href = 'game.html?'+data;
 }

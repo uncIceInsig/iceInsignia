@@ -18,7 +18,7 @@
 <input name="submit" type="submit" value="Login" />
 </form>
 <p>Not registered yet? <br><a class="p1hov"href='registration.php'>Register Here</a></p>
-<a class="p1hov" href="destroy.php">Logout</a>
+
 
 </div>
 <?php

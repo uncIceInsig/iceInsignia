@@ -15,7 +15,6 @@
 <input name="submit" type="submit" value="Login" />
 </form>
 <p>Not registered yet? <br><a class = "p2hov" href='registrationP2.php'>Register Here</a></p>
-<a class="p2hov" href="destroy.php">Logout</a>
 </div>
 
 <?php

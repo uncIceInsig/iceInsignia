@@ -10,7 +10,7 @@
     <script src="PlayableClasses/priest.js"></script>
     <script src="PlayableClasses/rogue.js"></script>
     <script src="PlayableClasses/druid.js"></script>
-    <link rel="stylesheet" type="text/css" href="loginPage/index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
 
   <body>

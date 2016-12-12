@@ -110,6 +110,10 @@ var Druid = function(player, count)
   {
     this.health = this.getMaxHealth();
   }
+  this.addDefense = function(defense)
+  {
+    this.defense += defense;
+  }
 
   this.resetMoves = function()
   {

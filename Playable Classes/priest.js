@@ -109,6 +109,10 @@ var Priest = function(player, count)
   {
     this.intellect -= intellect;
   }
+  this.addStrength = function(strength)
+  {
+    this.strength += strength;
+  }
 
   this.addDefense = function(defense)
   {

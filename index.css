@@ -175,16 +175,24 @@ CSS
 .Player1TeamList{
   float: left;
   width: auto;
-  padding: 15px;
+  padding-left: 39%;
+  padding-top: 5%;
   color: #e50000;
-
+}
+caption{
+  padding-left: 65%;
 }
 
 .Player2TeamList{
+
   float: left;
   width: auto;
-  padding: 15px;
+  padding-left: 15px;
+  padding-top: 5%;
   color: dodgerblue;
+}
+.Player2TeamLeft td{
+  text-align: right;
 }
 
 #gameTable{

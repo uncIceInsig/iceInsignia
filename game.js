@@ -398,7 +398,7 @@ var Game = function()
               {
                 var element = $("<td>", {class: "water"});
                 var img = document.createElement('img');
-                img.src = "sprites/water2.gif";
+                img.src = "Sprites/water2.gif";
                 element.append(img);
                 tr.append(element);
               }
@@ -406,7 +406,7 @@ var Game = function()
               {
                 var element = $("<td>", {class: "land"});
                 var img = document.createElement('img');
-                img.src = "sprites/field.gif";
+                img.src = "Sprites/field.gif";
                 element.append(img);
                 tr.append(element);
               }
@@ -414,35 +414,35 @@ var Game = function()
               {
                 var element = $("<td>", {class: "rock"});
                 var img = document.createElement('img');
-                img.src = "sprites/stone.gif";
+                img.src = "Sprites/stone.gif";
                 element.append(img);
                 tr.append(element);
               }
               else if (board[l][i].getTerrain() == "ice") {
                 var element = $("<td>", {class: "ice"});
                 var img = document.createElement('img');
-                img.src = "sprites/ice2.png";
+                img.src = "Sprites/ice2.png";
                 element.append(img);
                 tr.append(element);
               }
               else if (board[l][i].getTerrain() == "berg") {
                 var element = $("<td>", {class: "berg"});
                 var img = document.createElement('img');
-                img.src = "sprites/ice.png";
+                img.src = "Sprites/ice.png";
                 element.append(img);
                 tr.append(element);
               }
               else if (board[l][i].getTerrain() == "sand") {
                 var element = $("<td>", {class: "sand"});
                 var img = document.createElement('img');
-                img.src = "sprites/sand.jpg";
+                img.src = "Sprites/sand.jpg";
                 element.append(img);
                 tr.append(element);
               }
               else if (board[l][i].getTerrain() == "weed") {
                 var element = $("<td>", {class: "weed"});
                 var img = document.createElement('img');
-                img.src = "sprites/weed.png";
+                img.src = "Sprites/weed.png";
                 element.append(img);
                 tr.append(element);
               }
@@ -458,7 +458,7 @@ var Game = function()
                   var element = $("<td>", {class: "playerTwo"});
                 }
                 var img = document.createElement('img');
-                img.src = "sprites/mage.gif";
+                img.src = "Sprites/mage.gif";
                 element.append(img);
                 tr.append(element);
               }
@@ -472,7 +472,7 @@ var Game = function()
                   var element = $("<td>", {class: "playerTwo"});
                 }
                 var img = document.createElement('img');
-                img.src = "sprites/tank.gif";
+                img.src = "Sprites/tank.gif";
                 element.append(img);
                 tr.append(element);
               }
@@ -486,7 +486,7 @@ var Game = function()
                   var element = $("<td>", {class: "playerTwo"});
                 }
                 var img = document.createElement('img');
-                img.src = "sprites/priest.gif";
+                img.src = "Sprites/priest.gif";
                 element.append(img);
                 tr.append(element);
               }
@@ -500,7 +500,7 @@ var Game = function()
                   var element = $("<td>", {class: "playerTwo"});
                 }
                 var img = document.createElement('img');
-                img.src = "sprites/druid.gif";
+                img.src = "Sprites/druid.gif";
                 element.append(img);
                 tr.append(element);
               }
@@ -514,7 +514,7 @@ var Game = function()
                   var element = $("<td>", {class: "playerTwo"});
                 }
                 var img = document.createElement('img');
-                img.src = "sprites/swordsman.gif";
+                img.src = "Sprites/swordsman.gif";
                 element.append(img);
                 tr.append(element);
               }
@@ -869,25 +869,20 @@ var Game = function()
 
             if(playerOne.getTeamLength() == 0)
             {
+              alert("ajax request time");
               var name = playerTwo.getName();
               $.ajax({
-                url: 'update.php',
-                type: 'POST',
+                url: "update.php",
+                type: "POST",
                 data: {name : name},
-                success: function() {
-                  alert(playerTwo.getName() + " wins!");
-                }
               });
             }
             else if (playerTwo.getTeamLength() == 0){
               var name = playerOne.getName();
               $.ajax({
-                url: 'update.php',
-                type: 'POST',
+                url: "update.php",
+                type: "POST",
                 data: {name : name},
-                success: function() {
-                  alert(playerOne.getName() + " wins!");
-                }
               });
             }
           }
@@ -1068,7 +1063,7 @@ var Game = function()
             {
               var element = $("<td>", {class: "water"});
               var img = document.createElement('img');
-              img.src = "sprites/water2.gif";
+              img.src = "Sprites/water2.gif";
               element.append(img);
               tr.append(element);
             }
@@ -1076,7 +1071,7 @@ var Game = function()
             {
               var element = $("<td>", {class: "land"});
               var img = document.createElement('img');
-              img.src = "sprites/field.gif";
+              img.src = "Sprites/field.gif";
               element.append(img);
               tr.append(element);
             }
@@ -1084,7 +1079,7 @@ var Game = function()
             {
               var element = $("<td>", {class: "rock"});
               var img = document.createElement('img');
-              img.src = "sprites/stone.gif";
+              img.src = "Sprites/stone.gif";
               element.append(img);
               tr.append(element);
             }
@@ -1100,7 +1095,7 @@ var Game = function()
                 var element = $("<td>", {class: "playerTwo"});
               }
               var img = document.createElement('img');
-              img.src = "sprites/mage.gif";
+              img.src = "Sprites/mage.gif";
               element.append(img);
               tr.append(element);
             }
@@ -1114,7 +1109,7 @@ var Game = function()
                 var element = $("<td>", {class: "playerTwo"});
               }
               var img = document.createElement('img');
-              img.src = "sprites/tank.gif";
+              img.src = "Sprites/tank.gif";
               element.append(img);
               tr.append(element);
             }
@@ -1128,7 +1123,7 @@ var Game = function()
                 var element = $("<td>", {class: "playerTwo"});
               }
               var img = document.createElement('img');
-              img.src = "sprites/priest.gif";
+              img.src = "Sprites/priest.gif";
               element.append(img);
               tr.append(element);
             }
@@ -1142,7 +1137,7 @@ var Game = function()
                 var element = $("<td>", {class: "playerTwo"});
               }
               var img = document.createElement('img');
-              img.src = "sprites/druid.gif";
+              img.src = "Sprites/druid.gif";
               element.append(img);
               tr.append(element);
             }
@@ -1156,7 +1151,7 @@ var Game = function()
                 var element = $("<td>", {class: "playerTwo"});
               }
               var img = document.createElement('img');
-              img.src = "sprites/swordsman.gif";
+              img.src = "Sprites/swordsman.gif";
               element.append(img);
               tr.append(element);
             }

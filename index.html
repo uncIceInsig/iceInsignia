@@ -5,55 +5,93 @@
   <link rel = "stylesheet" href = "home.css">
 </head>
 <body>
+  <h1 id='ice' style = "text-align: center;">ICE INSIGNIA</h1>
+  <div>
+  <table id = "images"><tr><td>
+  <img src="GraField.png" width="200" height="200"><br>
+  </td></tr>
+  <tr><td>
+  <img src="DesField.png" width="200" height="200"><br>
+  </td></tr>
+  <tr><td>
+  <img src="IceField.png" width="200" height="200"><br>
+  </td></tr></table>
   <table id="classTable">
     <tr class="class">
-      <td><div id="Warrior"><span>WARRIOR</span></div>
-        <div class="hover-content">
-            Display
+      <td><div id="Warrior"><span>WARRIOR</span>
+        <p class="hover-content">
+          <img src="Sprites/tank.gif" width="40" height="40">
+            The Warrior is a tank. It can take whatever the enemy throws at it and give it right back.
+            <table id = "WarStats" class="hover-content"><tr><td>Health</td><td>Strength</td><td>Defense</td><td>Intellect</td><td>Movement</td><td>Range</td></tr><tr><td>150</td><td>20</td><td>60</td><td>0</td><td>6</td><td>1</td></tr></table>
+        </p>
         </div>
         </td>
     </tr>
     <tr class="class">
-    <td><div id="Swordsman">SWORDSMAN</div>
-        <div class="hover-content">
-          Display
+    <td><div id="Swordsman">SWORDSMAN
+        <p class="hover-content">
+          <img src="Sprites/swordsman.gif" width="40" height="40">
+
+          Every fight needs those who are willing to get up close with the enemy. The Swordsman is willing and able to do great damage.
+          <table id = "SwoStats" class="hover-content"><tr><td>Health</td><td>Strength</td><td>Defense</td><td>Intellect</td><td>Movement</td><td>Range</td></tr><tr><td>100</td><td>30</td><td>35</td><td>0</td><td>6</td><td>1</td></tr></table>
+
+        </p>
         </div>
     </td>
     </tr>
     <tr class="class">
-      <td><div id="Druid">DRUID</div>
-          <div class="hover-content">
-              Display
-          </div>
+      <td><div id="Druid">DRUID</span>
+        <p class="hover-content">
+          <img src="Sprites/druid.gif" width="40" height="40">
+
+            The Druid is can do it all. A powerful close range attack with a respectable range attack. Don't let them catch you off guard.
+            <table id = "DruStats" class="hover-content"><tr><td>Health</td><td>Strength</td><td>Defense</td><td>Intellect</td><td>Movement</td><td>Range</td></tr><tr><td>110</td><td>50</td><td>35</td><td>25</td><td>5</td><td>3</td></tr></table>
+        </p>
+        </div>
       </td>
     </tr>
     <tr class="class">
-      <td><div id="Priest">PRIEST</div>
-          <div class="hover-content">
-              Display
-          </div>
+      <td><div id="Priest">PRIEST</span>
+        <p class="hover-content">
+          <img src="Sprites/priest.gif" width="40" height="40">
+
+            The Priest is a Godsend. It doesn't believe in fighting, but it will protect its own anyway it can. It provide huge healing bennefits.
+            <table id = "PriStats" class="hover-content"><tr><td>Health</td><td>Strength</td><td>Defense</td><td>Intellect</td><td>Movement</td><td>Range</td></tr><tr><td>75</td><td>5</td><td>30</td><td>40</td><td>5</td><td>4</td></tr></table>
+
+        </p>
+        </div>
       </td>
     </tr>
     <tr class="class">
-      <td><div id="Mage">MAGE</div>
-          <div class="hover-content">
-              Display
-          </div>
+      <td><div id="Mage">MAGE</span>
+        <p class="hover-content">
+          <img src="Sprites/mage.gif" width="40" height="40">
+
+            The Mage is a pure long range fighter. It can hit hard from a safe distance away.
+            <table id = "MagStats" class="hover-content"><tr><td>Health</td><td>Strength</td><td>Defense</td><td>Intellect</td><td>Movement</td><td>Range</td></tr><tr><td>80</td><td>5</td><td>30</td><td>60</td><td>5</td><td>3</td></tr></table>
+
+        </p>
+        </div>
       </td>
     </tr>
     <tr class="buttons">
-      <td><button id="rules">HOW TO PLAY</button></td>
-      <td><button id='register'>REGISTER</button></td>
-      <td><button id="play">PLAY NOW</button></td>
+      <td><form action="rules.php">
+          <input type="submit" value="HOW TO PLAY" />
+          </form></td>
+      <td><form action="registration.php">
+          <input type="submit" value="REGISTER" />
+          </form></td>
+      <td><form action="loginP1.php">
+          <input type="submit" value="PLAY NOW" />
+          </form></td>
     </tr>
 
   </table>
+</div>
 
-  <table id="screenshots">
-    <div></div>
-    <div></div>
-    <div></div>
-  </table>
+
+
+
 
 
 </body>

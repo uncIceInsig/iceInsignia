@@ -1,13 +1,17 @@
 <?php
-session_start();
-require('Dbconnect.php');
-$name = $_REQUEST('name');
-$query1 = "SELECT ID FROM Users WHERE userName=$name";
-$queryID = mysqli_query($con,$query1) or die(mysql_error());
+$conn = mysqli_connect("classroom.cs.unc.edu", "bgbrooks", "bigben416", "bgbrooksdb");
+$name = @$_POST['name'];
+$query = "SELECT wins FROM Scores WHERE userName = '$name'";
+//$result = mysqli_query($conn, $query);
+$result = mysqli_query($conn, $query);
+$row = mysqli_fetch_assoc($result);
+$number = $row["wins"];
+$numVal = (int) $number;
+$numVal = $numVal + 1;
 
-$query2 = "INSERT INTO Scores ( id,userName, wins) VALUES($queryID, $name, '1')";
-$result2= mysqli_query($con,$query2) or die(mysql_error());
+$sql = "UPDATE Scores SET wins = '$numVal' WHERE userName = '$name'";
+//$sql = "UPDATE Scores SET wins = '$numValue' WHERE userName = '$name'";
+$conn->query($sql);
 
-
-
+$conn->close();
  ?>

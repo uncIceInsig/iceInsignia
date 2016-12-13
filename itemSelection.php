@@ -85,12 +85,12 @@
     <tr>
       <td>
         <div class = item id = "book1">
-          <img src = "sprites/book.gif" title="Book +50 Intellect" alt="Book +50 Intellect"/>
+          <img src = "Sprites/book.gif" title="Book +50 Intellect" alt="Book +50 Intellect"/>
         </div>
       </td>
       <td>
         <div class = item id = "book2">
-          <img src = "sprites/book.gif" title="Book +50 Intellect" alt="Book +50 Intellect"/>
+          <img src = "Sprites/book.gif" title="Book +50 Intellect" alt="Book +50 Intellect"/>
         </div>
       </td>
     </tr>
@@ -98,12 +98,12 @@
     <tr>
       <td>
         <div class = item id = "mail1">
-          <img src = "sprites/chainmail.gif" title="Chainmail +45 Defense" alt="Chainmail +45 Defense"/>
+          <img src = "Sprites/chainmail.gif" title="Chainmail +45 Defense" alt="Chainmail +45 Defense"/>
         </div>
       </td>
       <td>
         <div class = item id = "mail2">
-          <img src = "sprites/chainmail.gif" title="Chainmail +45 Defense" alt="Chainmail +45 Defense"/>
+          <img src = "Sprites/chainmail.gif" title="Chainmail +45 Defense" alt="Chainmail +45 Defense"/>
         </div>
       </td>
     </tr>
@@ -112,12 +112,12 @@
     <tr>
       <td>
         <div class = item id = "egg1">
-          <img src = "sprites/egg.gif" title="Ring +30 Strength" alt="Ring +30 Strength"/>
+          <img src = "Sprites/egg.gif" title="Ring +30 Strength" alt="Ring +30 Strength"/>
         </div>
       </td>
       <td>
         <div class = item id = "egg2">
-          <img src = "sprites/egg.gif" title="Ring +30 Strength" alt="Ring +30 Strength"/>
+          <img src = "Sprites/egg.gif" title="Ring +30 Strength" alt="Ring +30 Strength"/>
         </div>
       </td>
     </tr>
@@ -126,12 +126,12 @@
     <tr>
       <td>
         <div class = item id = "pot1">
-          <img src = "sprites/HPpot.gif" title="Health Pot +60 HP" alt="Health Pot +60 HP"/>
+          <img src = "Sprites/HPpot.gif" title="Health Pot +60 HP" alt="Health Pot +60 HP"/>
         </div>
       </td>
       <td>
         <div class = item id = "pot2">
-          <img src = "sprites/HPpot.gif" title="Health Pot +60 HP" alt="Health Pot +60 HP"/>
+          <img src = "Sprites/HPpot.gif" title="Health Pot +60 HP" alt="Health Pot +60 HP"/>
         </div>
       </td>
     </tr>
@@ -140,12 +140,12 @@
     <tr>
       <td>
         <div class = item id = "boot1">
-          <img src = "sprites/boots.gif" title="Boots +1 Max Movement" alt="Boots +1 Max Movement"/>
+          <img src = "Sprites/boots.gif" title="Boots +1 Max Movement" alt="Boots +1 Max Movement"/>
         </div>
       </td>
       <td>
         <div class = item id = "boot2">
-          <img src = "sprites/boots.gif" title="Boots +1 Max Movement" alt="Boots +1 Max Movement"/>
+          <img src = "Sprites/boots.gif" title="Boots +1 Max Movement" alt="Boots +1 Max Movement"/>
         </div>
       </td>
     </tr>

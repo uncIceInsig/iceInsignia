@@ -1,28 +1,50 @@
+body{
+  background-color: black;
+}
 .class div{
   width: 500px;
   height: 100px;
   color: white;
-  background-color: DeepSkyBlue;
+  background-color: DeepSkyBlue
   border-radius: 6px;
   margin: 10px;
   position: relative;
-  left: 30%;
+  left: 3%;
   text-align: center;
+  z-index: -1;a
+
 }
 
 .class:hover .hover-content{
-  display: block;
+display: block;
 }
 
 .hover-content{
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: auto;
   display: none;
+  position: relative;
+
 }
 
 
 .buttons{
   float: left;
 }
-.buttons button{
+/*.buttons form{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: DeepSkyBlue;
+  border-radius: 6px;
+  margin: 10px;
+  position: relative;
+  left: 30%;
+}*/
+form input[type=submit]
+{
+
   width: 100px;
   height: 40px;
   color: white;
@@ -33,6 +55,42 @@
   left: 30%;
 }
 
+
 .screenshots div{
-  float: left;
+
+}
+p img {
+    position: absolute;
+    left: 0px;
+
+    z-index: -1;
+}
+#images{
+  position: absolute;;
+  right: 15%;
+}
+table #WarStats{
+  padding-left: 60px;
+
+}
+#SwoStats{
+  padding-left: 60px;
+
+}
+#DruStats{
+  padding-left: 60px;
+
+}
+#PriStats{
+  padding-left: 60px;
+
+}
+#MagStats{
+  padding-left: 60px;
+
+}
+#ice{
+  font-family: fantasy;
+  text-shadow: 0 0 2px bisque;
+  color: mediumslateblue;
 }

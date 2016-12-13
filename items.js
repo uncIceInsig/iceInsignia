@@ -67,55 +67,55 @@ var parseURL = function(){
     switch (p1chars.charAt(i-1)) {
       case 'f':
         elm = document.createElement('img');
-        elm.src = 'sprites/tank.gif'
+        elm.src = 'Sprites/tank.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 's':
         elm = document.createElement('img');
-        elm.src = 'sprites/swordsman.gif'
+        elm.src = 'Sprites/swordsman.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 'k':
         elm = document.createElement('img');
-        elm.src = 'sprites/knight.gif'
+        elm.src = 'Sprites/knight.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 't':
         elm = document.createElement('img');
-        elm.src = 'sprites/tank.gif'
+        elm.src = 'Sprites/tank.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 'a':
         elm = document.createElement('img');
-        elm.src = 'sprites/archer.gif'
+        elm.src = 'Sprites/archer.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 'd':
         elm = document.createElement('img');
-        elm.src = 'sprites/druid.gif'
+        elm.src = 'Sprites/druid.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 'p':
         elm = document.createElement('img');
-        elm.src = 'sprites/priest.gif'
+        elm.src = 'Sprites/priest.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 'r':
         elm = document.createElement('img');
-        elm.src = 'sprites/rogue.gif'
+        elm.src = 'Sprites/rogue.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
       case 'm':
         elm = document.createElement('img');
-        elm.src = 'sprites/mage.gif'
+        elm.src = 'Sprites/mage.gif'
         $('.playerOneList #char'+i).append(elm);
         $('.playerOneList #char'+i+' img').css({'width':'100%'});
         break;
@@ -126,55 +126,55 @@ var parseURL = function(){
     switch (p2chars.charAt(i-1)) {
       case 'f':
         elm = document.createElement('img');
-        elm.src = 'sprites/tank.gif'
+        elm.src = 'Sprites/tank.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 's':
         elm = document.createElement('img');
-        elm.src = 'sprites/swordsman.gif'
+        elm.src = 'Sprites/swordsman.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 'k':
         elm = document.createElement('img');
-        elm.src = 'sprites/knight.gif'
+        elm.src = 'Sprites/knight.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 't':
         elm = document.createElement('img');
-        elm.src = 'sprites/tank.gif'
+        elm.src = 'Sprites/tank.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 'a':
         elm = document.createElement('img');
-        elm.src = 'sprites/archer.gif'
+        elm.src = 'Sprites/archer.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 'd':
         elm = document.createElement('img');
-        elm.src = 'sprites/druid.gif'
+        elm.src = 'Sprites/druid.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 'p':
         elm = document.createElement('img');
-        elm.src = 'sprites/priest.gif'
+        elm.src = 'Sprites/priest.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 'r':
         elm = document.createElement('img');
-        elm.src = 'sprites/rogue.gif'
+        elm.src = 'Sprites/rogue.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;
       case 'm':
         elm = document.createElement('img');
-        elm.src = 'sprites/mage.gif'
+        elm.src = 'Sprites/mage.gif'
         $('.playerTwoList #char'+i).append(elm);
         $('.playerTwoList #char'+i+' img').css({'width':'100%'});
         break;

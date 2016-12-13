@@ -23,15 +23,21 @@ if (isset($_REQUEST['userName'])){
   $userName = mysqli_real_escape_string($con,$username);
 	$password = stripslashes($_REQUEST['password']);
 	$password = mysqli_real_escape_string($con,$password);
+	$conn = new mysqli("classroom.cs.unc.edu", "bgbrooks", "bigben416", "bgbrooksdb");
         $query = "INSERT into `Users` (firstName, lastName, userName, password)
 VALUES ('$firstName', '$lastName', '$userName', '".md5($password)."')";
-        $result = mysqli_query($con,$query);
-        if($result){
-            echo "<div class='form'>
+        $conn->query($query);
+				$id = $conn->insert_id;
+				echo $id;
+				$value = 0;
+				$query2 = "INSERT INTO `Scores` (id, userName, wins) VALUES ('$id', '$userName', '$value')";
+				$conn->query($query2);
+				$conn->close();
+				echo "<div class='form'>
 <h3>You are registered successfully.</h3>
-<br/>Click here to <a href='loginP1.php'>Login</a></div>";
-        }
-    }
+<br/>Click here to <a href='loginP2.php'>Login</a></div>";
+}
+}
 ?>
 <div class="form">
 <h1>Registration</h1>

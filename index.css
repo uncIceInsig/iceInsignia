@@ -124,6 +124,7 @@ table{
   margin-left: 15%;
   text-align: left;
   cursor:default;
+  padding-left: 12%;
   color: #e50000;
 }
 .playerTwoList
@@ -278,11 +279,14 @@ float: left;
 
 #playerOneTurn
 {
+  padding-left: 75%;
   color: #e50000;
 }
 #playerTwoTurn
 {
   color: dodgerblue;
+  padding-left: 75%;
+
 }
 
 #submitButton{

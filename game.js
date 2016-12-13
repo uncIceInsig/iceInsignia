@@ -100,6 +100,18 @@ var Game = function()
 {
     this.gameLoop = function()
     {
+      if(playerOne.hasMoves() == true)
+      {
+        //alert('1')
+        $(".turn").empty();
+        $(".turn").attr("id", 'playerOneTurn');
+        $(".turn").append("<span>PLAYER ONE'S TURN</span>");
+      }
+      else {
+        $(".turn").empty();
+        $(".turn").attr("id", 'playerTwoTurn');
+        $(".turn").append("<span>PLAYER TWO'S TURN</span>");
+      }
       var playerOneTurn = true;
       $(document).on("click", "td", function()
       {
@@ -157,7 +169,7 @@ var Game = function()
         {
           if(selectedCell.player != null)
           {
-            if((board[selectedCell.x][selectedCell.y+1].terrain !== "rock" &&
+            if((board[selectedCell.x][selectedCell.y+1].terrain != "rock" &&
             board[selectedCell.x][selectedCell.y+1].player == null &&
             board[selectedCell.x][selectedCell.y+1].terrain != "water"&&
             board[selectedCell.x][selectedCell.y+1].terrain != "berg" &&
@@ -219,14 +231,15 @@ var Game = function()
         }
         if(playerOne.hasMoves() == true)
         {
+          //alert('1')
           $(".turn").empty();
-          $(".turn").attr("id", "playerOneTurn");
-          $(".turn").innerHTML = "PLAYER ONE'S TURN";
+          $(".turn").attr("id", 'playerOneTurn');
+          $(".turn").append("<span>PLAYER ONE'S TURN</span>");
         }
         else {
           $(".turn").empty();
-          $(".turn").attr("id", "playerTwoTurn");
-          $(".turn").innerHTML = "PLAYER TWO'S TURN";
+          $(".turn").attr("id", 'playerTwoTurn');
+          $(".turn").append("<span>PLAYER TWO'S TURN</span>");
         }
       });
 

@@ -1,0 +1,38 @@
+.class div{
+  width: 500px;
+  height: 100px;
+  color: white;
+  background-color: DeepSkyBlue;
+  border-radius: 6px;
+  margin: 10px;
+  position: relative;
+  left: 30%;
+  text-align: center;
+}
+
+.class:hover .hover-content{
+  display: block;
+}
+
+.hover-content{
+  display: none;
+}
+
+
+.buttons{
+  float: left;
+}
+.buttons button{
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: DeepSkyBlue;
+  border-radius: 6px;
+  margin: 10px;
+  position: relative;
+  left: 30%;
+}
+
+.screenshots div{
+  float: left;
+}

@@ -160,8 +160,6 @@
   <table class = "playerTwoList">
     <tr>
       <td></td>
-      <td></td>
-      <td></td>
       <td id='user2'>
         <?php echo $_SESSION['userName2']; ?>
       </td>

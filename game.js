@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
-  $('.p2hov').on('click', function(e){
-    e.preventDefault();
-    window.location.href = 'destroy.php';
-  });
+
 
   var settings = {
     height: 15,
@@ -63,9 +60,6 @@ $(document).ready(function(){
       case 'e':
         p1itemArray[i] = 'ring';
         break;
-      case 't':
-        p1itemArray[i] = 'boot';
-        break;
       default:
         p1itemArray[i] = '';
         break;
@@ -84,9 +78,6 @@ $(document).ready(function(){
         break;
       case 'e':
         p2itemArray[i] = 'ring';
-        break;
-      case 't':
-        p2itemArray[i]  ='boot';
         break;
       default:
         p2itemArray[i] = '';
@@ -143,13 +134,6 @@ var Game = function()
       });
 
       $(document).keydown(function(e) {
-        if(playerOne.hasMoves() == false && playerTwo.hasMoves() == false)
-        {
-          playerOne.resetMoves();
-          playerTwo.resetMoves();
-          drawInfo();
-          return;
-        }
         if(e.which == 37)
         {
           if(selectedCell.player != null)
@@ -226,7 +210,6 @@ var Game = function()
             }
           }
         }
-
         if(playerOne.hasMoves() == false && playerTwo.hasMoves() == false)
         {
           playerOne.resetMoves();
@@ -234,16 +217,17 @@ var Game = function()
           drawInfo();
           return;
         }
-        if(playerOne.hasMoves()){
-          $('.turn').empty();
-          $('.turn').attr('id', 'playerOneTurn');
-          $('.turn').innerHTML = "PLAYER ONE'S TEAM";
-        }else{
-          $('.turn').empty();
-          $('.turn').attr('id', 'playerTwoTurn');
-          $('turn').innerHTML = "PLAYER TWO'S TEAM";
+        if(playerOne.hasMoves() == true)
+        {
+          $(".turn").empty();
+          $(".turn").attr("id", playerOneTurn);
+          $(".turn").innerHTML = "PLAYER ONE'S TURN";
         }
-
+        else {
+          $(".turn").empty();
+          $(".turn").attr("id", playerTwoTurn);
+          $(".turn").innerHTML = "PLAYER TWO'S TURN";
+        }
       });
 
       //outputs character information like class/name/health/moves left
@@ -872,10 +856,26 @@ var Game = function()
 
             if(playerOne.getTeamLength() == 0)
             {
-              alert(playerTwo.getName() + " wins!");
+              var name = playerTwo.getName();
+              $.ajax({
+                url: 'update.php',
+                type: 'POST',
+                data: {name : name},
+                success: function() {
+                  alert(playerTwo.getName() + " wins!");
+                }
+              });
             }
             else if (playerTwo.getTeamLength() == 0){
-              alert(playerOne.getName() + " wins!");
+              var name = playerOne.getName();
+              $.ajax({
+                url: 'update.php',
+                type: 'POST',
+                data: {name : name},
+                success: function() {
+                  alert(playerOne.getName() + " wins!");
+                }
+              });
             }
           }
           //Checks if every character is out of moves
@@ -967,7 +967,7 @@ var Game = function()
           if ((k>=3 && k<=4 && i>=10 &&i<=11)) {
             board[i][k].terrain = 'water';
           }
-          if ((k==11&&i==2)||(k==4&&i==6)||(k==7&&i==10)||(k==13&&i==8)||(k==1&&i==8)||(k==8&&i==4)||(k==10&&i==7)||(k==2&&i==3)) {
+          if ((k==11&&i==2)||(k==4&&i==6)||(k==7&&i==10)||(k==13&&i==8)||(k==1&&i==8)||(k==8&&i==4)||(k==2&&i==0)||(k==10&&i==7)||(k==2&&i==3)) {
             board[i][k].terrain = 'weed';
           }
         }

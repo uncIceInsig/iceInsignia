@@ -220,12 +220,12 @@ var Game = function()
         if(playerOne.hasMoves() == true)
         {
           $(".turn").empty();
-          $(".turn").attr("id", playerOneTurn);
+          $(".turn").attr("id", "playerOneTurn");
           $(".turn").innerHTML = "PLAYER ONE'S TURN";
         }
         else {
           $(".turn").empty();
-          $(".turn").attr("id", playerTwoTurn);
+          $(".turn").attr("id", "playerTwoTurn");
           $(".turn").innerHTML = "PLAYER TWO'S TURN";
         }
       });
